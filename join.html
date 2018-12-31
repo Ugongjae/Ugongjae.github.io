@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+
+<link rel="stylesheet" href="./joinstyle.css" type="text/css">
+<title>회원가입</title>
+<script src="joincheck.js"></script>
+</head>
+<body>
+	<div id="allcontents">
+		<div id="mainlogo">
+			<a href="./index.html"> <img src="./sagin2.png" alt="로고" width="300px"></a>
+		</div>
+		<article>
+		<div>
+			<fieldset id="join_form">
+				<form action="#" method="post" onsubmit="return submitcheck()">
+					<div id="join_content_id">
+						<input type="text" id="u_id" name="u_id" placeholder="ID"
+							maxlength="15">
+							<input type="button" id="id_check" name="id_check" onclick="IDcheck()" value="Duplication">
+					</div>
+					<div class="join_content">
+						<input type="password" id="u_password" name="u_password"
+							placeholder="Password" maxlength="20">
+					</div>
+					<div class="join_content">
+						<input type="password" id="u_passwordcheck" name="u_passwordcheck"
+							placeholder="Password check" maxlength="20" onblur="passcheck()" >
+					</div>
+					<div id="checktext"></div>
+					<div class="join_content">
+						<input type="text" id="u_name" name="u_name" placeholder="Name"
+							maxlength="12">
+					</div>
+					<div class="join_content">
+						<input type="tel" id="u_tel" name="u_tel" placeholder="Phone"
+							maxlength="13">
+					</div>
+					<div class="join_content">
+						<input type="text" id="u_email" name="u_email" placeholder="E-mail"
+							maxlength="40">
+					</div>
+					<div id="join_button">
+						<input type="submit" value="Join" >
+					</div>
+				</form>
+			</fieldset>
+		</div>
+		</article>
+	</div>
+</body>
+</html>

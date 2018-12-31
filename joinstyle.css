@@ -1,0 +1,87 @@
+@CHARSET "EUC-KR";
+
+body {
+	margin-top: 0px;
+	padding-bottom: 20px;
+	font-family: "Anton", "Sans-serif";
+	color: #467B98;
+}
+#mainlogo{
+	width:800px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+#mainlogo img{
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+}
+#allcontents {
+	width: 800px;
+	min-height: 300px;
+	padding-bottom: 10px;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+fieldset{
+	padding-left:0px;
+	padding-right:0px;
+	display:block;
+	border:0;
+}
+#join_content_id{
+	width:400px;
+	height:30px;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#join_content_id input[type="text"]{
+	height:30px;
+	width:300px;
+	font-size:15px;
+}
+.join_content{
+	width:400px;
+	height:30px;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.join_content input[type="text"], input[type="password"], input[type="tel"],input[type="email"]{
+	height:30px;
+	width:400px;
+	font-size:15px;
+}
+
+#join_button{
+	width:400px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#id_check{
+	height:36px;
+	background:#467B98;
+	color:#FFFFFF;
+	border:none;
+	
+}
+#join_button input[type="submit"]{
+	width:400px;
+	height:40px;
+	background-color:#467B98;
+	color:#FFFFFF;
+	border:0;
+}
+#checktext{
+	height:30px;
+	text-align:center;
+}
+

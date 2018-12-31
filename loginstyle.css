@@ -1,0 +1,43 @@
+@CHARSET "EUC-KR";
+
+.login_content{
+	width:400px;
+	height:40px;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.login_content input[type="text"], input[type="password"]{
+	height:40px;
+	width:400px;
+	font-size:20px;
+}
+#login_button{
+	width:400px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#login_button input[type="submit"]{
+	width:400px;
+	height:40px;
+	background-color:#467B98;
+	color:#FFFFFF;
+	border:0;
+}
+#join_button{
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#join_button input[type="button"]{
+	width:200px;
+	height:30px;
+	background-color:#FFFFFF;
+	color:#467B98;
+	font-weight:bold;
+	border:0;
+}
