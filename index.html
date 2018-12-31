@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="index.css">
+<script src="svg.js"></script>
+<script src="Imgcontrol.js"></script>
+<script src="Gucontrol.js"></script>
+<link rel="stylesheet" href="loginstyle.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="navload.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGREtrRTljTlQ3OTg"></script>
+<!-- ie10-viewport-bug-workaround.js -->
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGeHd6VV9JczlHUjg"></script>
+<script src="openNav.js"></script>
+<!-- holder.js -->
+
+</head>
+<body>
+	<div class="div_all">
+		<div class="div_Topmenu">
+			<div class="div_Topmenu_container">
+				<ul class="ul_menu">
+					<li class="logo">
+						<a href="http://www.naver.com" target="blank">
+							<img src="sagin2.png" height="40" height="40">
+						</a>
+					</li>
+					<li class="search">
+						<form>
+						<input type="text" placeholder="Search....">
+						<button>
+							<img src="send.png" height ="20">
+						</button>
+						</form>
+					</li>
+					<li class="swap">
+						<button>
+							<img src="world.png" height ="20">
+						</button>
+					</li>
+					<li class="login">
+						<button data-toggle="modal" data-target="#loginModal">
+							<img src="profile.png" height ="25">
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<div id="loginModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal Header</h4>
+						</div>
+
+						<div class="modal-body">
+							<div class="login_content">
+								<input type="text" id="u_id" name="u_id" placeholder="ID" maxlength="15">
+							</div>
+
+							<div class="login_content">
+								<input type="password" id="u_password" name="u_password"
+									placeholder="password" maxlength="20">
+							</div>
+
+							<div id="login_button">
+								<input type="submit" value="Login">
+							</div>
+
+							<div id="join_button">
+								<input type="button" value="Join" onclick="location.href='./join.html'">
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+	<div id ="svg_div">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="100%" height="700" id="Map">
+			<defs>
+				<pattern id="pat-Yongsan-gu" x="0" y="0" width="1" height="1"><image id="img-Yongsan-gu" width="120px" xlink:href=""/></pattern>
+      			<pattern id="pat-Seongdong-gu" x="0" y="0" width="1" height="1"><image id="img-Seongdong-gu" width="120px" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Gwangjin-gu" x="0" y="0" width="1" height="1"><image id="img-Gwangjin-gu" width="120px" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Jungrang-gu" x="0" y="0" width="1" height="1"><image id="img-Jungrang-gu"width="120px" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Seongbuk-gu" x="0" y="0" width="1" height="1"><image id="img-Seongbuk-gu" width="120px" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Dongdaemun-gu" x="0" y="0" width="1" height="1"><image id="img-Dongdaemun-gu" width="120px" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Noweon-gu" x="0" y="0" width="1" height="1"><image id="img-Noweon-gu" width="120px" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Dobong-gu" x="0" y="0" width="1" height="1"><image id="img-Dobong-gu" width="120px" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Gangbuk-gu" x="0" y="0" width="1" height="1"><image id="img-Gangbuk-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Jung-gu" x="0" y="0" width="1" height="1"><image id="img-Jung-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Jongro-gu" x="0" y="0" width="1" height="1"><image id="img-Jongro-gu"  width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Seodaemun-gu" x="0" y="0" width="1" height="1"><image id="img-Seodaemun-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Eunpyeong-gu" x="0" y="0" width="1" height="1"><image id="img-Eunpyeong-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Mapo-gu" x="0" y="0" width="1" height="1"><image id="img-Mapo-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Gangdong-gu" x="0" y="0" width="1" height="1"><image id="img-Gangdong-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Songpa-gu" x="0" y="0" width="1" height="1"><image id="img-Songpa-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Gangnam-gu" x="0" y="0" width="1" height="1"><image id="img-Gangnam-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Seocho-gu" x="0" y="0" width="1" height="1"><image id="img-Seocho-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Dongjak-gu" x="0" y="0" width="1" height="1"><image id="img-Dongjak-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Gwanak-gu" x="0" y="0" width="1" height="1"><image id="img-Gwanak-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Geumcheon-gu" x="0" y="0" width="1" height="1"><image id="img-Geumcheon-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Youngdeungpo-gu" x="0" y="0" width="1" height="1"><image id="img-Youngdeungpo-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Guro-gu" x="0" y="0" width="1" height="1"><image id="img-Guro-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Yangcheon-gu" x="0" y="0" width="1" height="1"><image id="img-Yangcheon-gu" width="120" height="250" xlink:href=""/></pattern>
+      			<pattern id="pat-Gangseo-gu" x="0" y="0" width="1" height="1"><image id="img-Gangseo-gu" width="120" height="250" xlink:href=""/></pattern>
+      			
+				<path d="M274.71 359.49L277.91 361.44L282.71 366.95L284.48 374.41L286.61 380.62L294.43 382.76L316.63 393.06L333.51 393.59L353.75 380.62L359.62 372.45L369.56 364.99L376.6 351.75L371.87 348.3L369.56 349.54L366.01 348.3L366.01 346.52L364.41 344.92L363.88 340.5L362.46 340.84L359.62 336.22L360.68 332.85L358.73 332.31L358.73 328.76L354.82 330.18L349.14 330.18L347.54 334.09L345.76 334.09L339.54 326.98L334.57 326.98L330.84 322.19L327.29 323.08L321.78 322.19L318.59 320L318.59 323.96L312.01 322.19L308.46 322.19L307.22 320L302.42 322.19L297.98 326.98L300.11 329.47L299.22 331.42L297.27 331.42L294.43 336.22L291.05 337.46L290.52 341.73L291.59 343.32L287.68 348.3L284.48 350.25L284.48 352.38L280.22 355.4L274.71 355.4L272.05 358.6L274.71 359.49Z" id="path-Yongsan-gu" fill="url(#pat-Yongsan-gu)"></path><path d="M364.39 344.94L366 346.47L366 348.16L369.6 349.22L371.72 348.16L376.59 351.77L384.85 345.2L390.36 343.93L397.14 345.2L437.39 360.45L459.43 312.15L454.77 309.6L436.76 306.64L422.99 293.29L414.09 287.36L404.77 288.21L399.26 293.29L394.17 292.66L385.7 289.48L385.7 301.13L390.36 302.19L390.36 305.37L386.76 308.97L385.7 315.11L382.73 314.48L377.86 317.87L376.59 323.38L368.33 332.91L366 332.91L364.72 336.72L367.48 338.63L363.88 340.54L364.39 344.94Z" id="path-Seongdong-gu" fill="url(#pat-Seongdong-gu)"></path>
+				<path d="M459.43 312.22L437.23 360.45L453.25 369.75L459.43 371L469.44 372.24L478.16 371.53L482.25 368.86L507.87 341.64L511.25 335.59L512.32 331.85L517.66 311.57L514.46 310.32L512.32 311.03L499.87 311.57L498.09 310.32L501.29 291.64L501.29 288.97L499.16 288.97L498.09 287.36L483.67 293.42L480.12 292.89L479.58 291.11L475.31 291.11L465.35 290.04L456.45 310.32L459.43 312.22Z" id="path-Gwangjin-gu" fill="url(#pat-Gwangjin-gu)"></path><path d="M475.35 291.16L479.58 291.16L480.1 292.89L483.5 293.42L498.09 287.36L497.55 283.63L500.22 279.18L500.22 272.96L496.66 270.64L498.8 268.15L505.56 266.55L506.81 264.95L510.01 266.55L514.28 253.38L515.88 251.25L521.58 249.47L523 247.87L516.41 239.68L522.11 231.32L523 225.63L520.15 222.78L521.58 217.8L520.15 210.68L521.04 206.76L519.44 205.52L518.73 203.21L516.95 203.92L513.03 200.71L509.12 201.43L504.67 200.71L498.8 202.14L496.66 205.52L494.17 205.52L492.04 207.83L487.95 206.76L480.65 202.14L476.74 202.14L470.33 203.92L454.85 210.68L455.38 226.87L456.98 229.72L457.7 236.3L454.32 240.22L452.36 245.55L455.38 260.5L461.79 269.75L464.64 275.45L465.35 290.04L475.35 291.16Z" id="path-Jungrang-gu" fill="url(#pat-Jungrang-gu)"></path>
+				<path d="M382 277.81L380.01 280.57L377.85 279.59L378.3 276.83L376.77 275.87L376.23 271.85L372.17 272.3L368.7 273.32L366.22 275.1L362.89 272.3L360.71 262.81L355.49 258.51L354.59 252.72L346.92 253.26L344.46 254.56L341.73 253.26L336.85 253.86L330.57 251.78L326.13 247.67L326.13 240.46L332.16 239.81L334.55 237.38L332.16 226.51L333.09 220.09L332.5 212.63L327.22 209.16L325.49 198.98L322.01 194.35L322.7 189.3L324.84 187.54L323.28 185.48L320.92 187.54L318.91 187.18L316.99 182.02L318.91 178.92L325.77 175.81L329.97 173L338.69 179.88L342.07 179.88L343.92 184.94L346.92 185.48L352.39 191.98L355.49 191.98L358.57 195.08L363.5 195.71L362.89 200.87L366.53 208.39L376.77 212.63L385.12 217.7L390.73 215.91L396.02 216.6L396.02 222.26L406.81 215.24L409.66 210.26L423.72 195.08L439.52 209.89L439.88 212.94L447.48 213.53L450.4 210.77L455.24 210.77L455.24 226.51L450.4 226.51L447.48 228.97L446 227.99L443.87 229.38L441.57 228.97L438.29 234.14L439.11 235.53L437.72 236.76L434.76 236.6L431.65 236.6L427.38 238.65L425.49 235.94L420.9 245.79L418.93 245.05L415.98 245.54L414.58 244.23L412.45 245.38L410.86 246.92L408.71 254.56L404.42 254.56L404.42 257.1L394.11 270.88L385.12 278.41L382 277.81Z" id="path-Seongbuk-gu" fill="url(#pat-Seongbuk-gu)"></path>
+				<path d="M394.11 292.47L399.34 293.12L404.59 288.2L414.1 287.36L422.88 293.12L436.79 306.49L454.59 309.53L456.48 310.35L465.34 290.17L464.6 275.48L461.65 269.5L455.24 260.39L452.36 245.79L454.42 240.05L457.71 236.19L456.97 229.38L455.24 226.51L450.4 226.51L447.48 228.97L446 227.99L443.87 229.38L441.57 228.97L438.29 234.14L439.11 235.53L437.72 236.76L434.76 236.6L431.65 236.6L427.38 238.65L425.49 235.94L420.9 245.79L418.93 245.05L415.98 245.54L414.58 244.23L412.45 245.38L410.86 246.92L408.71 254.56L404.42 254.56L404.42 257.1L394.11 270.88L385.12 278.41L385.62 289.55L394.11 292.47Z" id="path-Dongdaemun-gu" fill="url(#pat-Dongdaemun-gu)"></path>
+				<path d="M439.63 209.82L439.97 212.9L447.48 213.47L450.44 210.85L455.24 210.85L469.89 203.91L476.72 202.09L480.73 202.09L488.13 206.64L492.11 207.55L493.93 205.27L496.77 205.27L498.93 202.09L503.83 200.71L500.87 197.65L503.83 193.67L504.39 189.01L507.47 187.64L512.59 182.98L513.38 170.58L511.22 169.78L511.22 168.19L513.38 166.82L512.13 161.7L510.08 161.7L508.95 159.31L504.39 156.92L498.25 156.35L488.13 155.79L485.25 148.28L487.41 143.73L484.11 136.79L482.06 138.95L476.72 137.47L490.82 130.19L491.85 126.89L487.41 125.41L489.35 123.93L487.41 119.61L489.35 116.65L489.8 107.09L487.87 105.84L485.7 98.79L484.45 96.86L485.7 92.42L487.41 87.87L490.48 85.25L489.8 78.2L487.07 76.61L478.54 75.01L474.33 74.56L473.19 68.19L469.89 64.55L463.75 64.2L462.95 65.46L459.31 65.91L457.04 67.73L452.04 67.73L446.01 75.92L439.19 78.2L434.87 76.61L431 77.06L425.99 81.27L426.9 85.25L425.99 90.71L423.26 105.84L422.46 115.17L425.99 121.88L426.9 131.67L430.54 136.79L430.54 147.48L432.93 155.1L431.45 164.66L429.18 164.66L427.36 162.04L426.9 157.27L424.4 157.72L421.21 164.09L419.17 163.75L419.17 169.1L417.35 170.58L415.41 178.43L411.77 182.1L421.21 189.8L423.72 194.92L439.63 209.82Z" id="path-Noweon-gu" fill="url(#pat-Noweon-gu)"></path>
+				<path d="M415.27 178.53L417.46 170.47L419.17 169.13L419.17 163.77L421.28 163.94L424.4 157.58L426.9 157.25L427.44 162.29L429.27 164.71L431.43 164.71L433.25 155.1L430.57 147.61L430.57 137.45L426.65 132.1L425.94 122.3L422.37 114.99L426.65 85.4L425.94 81.12L424.51 80.05L423.8 69.18L420.77 68.64L418.1 71.32L414.53 69.71L414.53 66.68L411.14 66.68L407.22 70.78L399.91 71.85L395.28 66.68L392.25 56.17L388.51 58.48L383.87 58.48L379.77 55.1L375.32 56.17L374.07 60.44L368.9 60.98L364.98 69.18L363.55 76.66L365.69 82.55L364.09 86.82L364.98 90.21L364.09 93.78L368.9 94.85L372.28 102.15L378.35 110L378.88 112.85L374.6 117.48L374.07 123.37L375.85 126.75L373.35 127.29L370.5 145.29L373.35 147.61L374.07 149.57L378.88 151L382.45 149.57L383.87 151.71L387.97 152.42L388.51 155.1L398.84 162.4L401.7 169.89L404.01 171.5L407.22 173L407.94 178.09L411.77 182.1L415.27 178.53Z" id="path-Dobong-gu" fill="url(#pat-Dobong-gu)"></path>
+				<path d="M364.04 87.08L365.1 89.87L363.96 93.73L369.04 94.96L372.57 102.18L378.31 109.97L378.8 112.92L374.78 117.52L374.29 123.59L375.93 126.7L373.39 127.36L370.6 145.24L373.31 147.29L374.13 149.59L378.8 150.99L382.58 149.67L384.05 151.64L387.99 152.38L388.81 155.25L398.9 162.22L401.61 169.77L403.91 171.33L407.25 173.13L407.82 178.3L411.76 182.08L421.2 189.95L423.66 195.12L409.46 210.05L406.68 215.14L396 222.44L395.76 216.61L390.5 215.79L385.17 217.6L376.72 212.51L366.58 208.33L362.97 200.78L363.3 195.69L358.75 195L355.42 191.92L352.31 191.92L346.89 185.44L343.94 185L342.22 180L338.75 180L330.16 173L332.83 166.13L331.23 164.17L328.56 164.17L327.67 160.61L330.16 156.34L328.56 152.78L329.09 148.51L324.65 145.66L324.65 142.82L322.33 137.66L324.65 134.1L326.96 135.16L334.95 123.6L336.92 124.13L343.69 119.15L342.8 116.3L343.69 108.3L341.91 101.71L340.84 94.95L348.85 87.12L353.65 85.88L355.43 87.12L356.85 84.63L361.83 84.63L364.15 85.88L364.04 87.08Z" id="path-Gangbuk-gu" fill="url(#pat-Gangbuk-gu)"></path>
+				<path d="M302.65 322.26L307.29 320.08L308.53 322.26L312.32 322.19L318.47 323.62L318.59 320.02L321.76 322.26L327.16 323L330.95 322.13L334.54 326.92L339.63 327.04L346.03 334.12L347.52 334.06L349.26 330.02L354.72 329.96L358.64 328.72L358.51 332.32L360.62 332.88L359.63 336.11L362.4 340.89L363.95 340.46L367.49 338.59L364.7 336.79L365.88 332.88L368.49 332.69L376.56 323.56L377.99 317.66L382.65 314.43L385.81 315.18L386.81 308.97L390.41 305.42L390.35 302.32L385.81 301.01L385.81 289.65L381.34 290.02L376.19 293.56L355.65 294.12L338.15 296.79L326.47 295.36L312.48 295.18L310.74 295.61L307.76 296.73L304.66 300.7L308.13 306.48L308.01 308.16L304.1 309.15L300.43 313L296.89 312.88L296.33 314.93L298.57 315.24L298.44 319.15L296.39 320.46L296.33 324.18L298.13 327.1L302.65 322.26Z" id="path-Jung-gu" fill="url(#pat-Jung-gu)"></path>
+				<path d="M308.15 184.56L305.94 184.89L304.87 183.5L303.31 183.41L301.51 185.55L293.63 187.27L289.86 193.01L283.62 193.01L281.82 198.26L282.8 199.66L281.57 204.74L279.28 205.97L279.28 208.19L280.83 210.16L281.74 217.29L279.85 220.49L279.77 223.86L282.31 224.1L285.26 229.35L283.79 238.54L285.43 241.58L290.02 241.49L288.71 248.39L292.48 255.03L290.02 267.17L293.55 269.3L295.03 272.83L290.6 271.85L287.97 274.39L288.14 276.69L285.26 276.44L285.26 278.08L295.68 284.97L293.8 288.01L302.7 299.25L304.84 300.64L307.87 296.7L312.38 295.15L326.63 295.39L338.03 296.79L355.83 294.16L376.18 293.59L381.45 290.05L385.73 289.68L385.09 278.53L381.93 277.9L379.99 280.5L377.93 279.56L378.32 276.96L376.72 275.81L376.11 271.93L372.26 272.32L368.73 273.32L366.17 275.01L362.89 272.34L360.77 263.05L355.5 258.49L354.44 252.85L347.05 253.37L344.42 254.63L341.72 253.29L336.76 253.9L330.46 251.56L326.05 247.52L326.05 240.48L332.2 239.84L334.54 237.45L332.11 226.55L333.12 220.2L332.36 212.61L327.2 209.25L325.54 199.11L321.99 194.42L322.76 189.29L324.82 187.64L323.28 185.41L321.06 187.6L318.8 187.07L317.18 182.18L311.68 180.4L308.15 184.56Z" id="path-Jongro-gu" fill="url(#pat-Jongro-gu)"></path>
+				<path d="M282.27 224.09L285.2 229.31L283.82 238.57L285.53 241.58L290.04 241.44L288.79 248.44L292.49 254.98L290.16 267.22L293.55 269.32L294.82 272.69L290.55 271.88L287.96 274.44L288.18 276.71L285.26 276.3L285.34 278.27L295.72 285.03L293.86 288.05L302.74 299.28L304.65 300.58L308.13 306.37L307.95 308.19L304.15 309.16L300.52 313.02L296.9 312.76L296.14 314.78L292.47 317.53L289.72 316.3L267.59 317.68L260.72 320.73L246.36 313.71L248.5 304.85L243.16 299.97L233.08 298.14L210.64 283.48L227.74 262.72L230.79 265.92L231.25 269.28L237.66 270.2L241.63 263.33L244.69 263.33L248.35 260.73L247.43 255.54L250.33 249.74L255.68 246.07L260.87 243.33L266.06 242.56L267.59 237.53L265.14 235.69L265.14 233.71L267.13 233.25L268.5 230.35L272.78 230.2L275.83 225.46L279.46 223.79L282.27 224.09Z" id="path-Seodaemun-gu" fill="url(#pat-Seodaemun-gu)"></path>
+				<path d="M308.15 184.47L306.19 184.88L305.05 183.46L303.18 183.33L301.63 185.51L293.64 187.24L289.99 192.94L283.75 193.03L281.97 198.18L282.93 199.33L281.84 204.59L279.06 205.78L279.46 208.26L280.94 210.24L281.74 217.19L279.95 220.36L280.15 223.84L275.88 225.42L273.11 230.28L268.44 230.48L267.15 233.26L264.87 233.76L264.77 235.94L267.65 237.72L266.26 242.59L261 243.18L250.61 249.43L247.64 255.78L248.33 261.14L244.56 263.42L241.88 263.22L237.81 269.97L231.46 269.37L231.17 265.9L227.6 262.72L210.48 283.55L204.82 276.51L196.59 269.86L182.2 255.38L186.37 249.92L189.64 250.71L187.06 256.67L189.84 259.74L196.59 258.85L203.63 258.95L207.6 256.77L206.81 251.9L210.72 247.94L209.14 237.22L208.84 233.25L211.12 232.06L209.53 214.8L216.08 201.41L219.06 198.93L217.67 196.85L218.16 194.76L221.04 192.78L221.54 188.71L218.07 184.05L218.07 179.68L221.44 175.61L223.72 174.1L223.72 164.88L226.7 163.39L225.9 158.82L218.96 155.65L216.28 150.89L228.98 157.63L232.95 156.54L239.05 156.24L250.95 147.32L257.2 147.71L261.46 144.74L266.11 136.6L270.58 133.53L275.64 132.63L276.93 134.92L281.99 138.69L286.05 138.69L290.12 143.84L291.11 149.7L295.18 151.88L297.26 160.31L301.03 161.11L307.38 168.55L306.89 173.01L311.65 180.15L308.15 184.47Z" id="path-Eunpyeong-gu" fill="url(#pat-Eunpyeong-gu)"></path>
+				<path d="M196.65 270.06L204.54 276.23L210.76 283.79L233.2 297.86L243.05 299.96L248.36 304.65L246.83 313.55L261.03 320.82L267.63 317.76L289.79 316.29L292.48 317.6L296.34 314.85L298.59 315.26L298.52 319.08L296.41 320.46L296.41 324.17L297.98 326.92L300.1 329.28L299.36 331.47L297.18 331.32L294.52 336.09L291.1 337.44L290.48 341.67L291.58 343.36L287.68 348.23L284.47 350.15L284.5 352.24L280.32 355.37L274.86 355.29L272 358.55L265.83 348.79L260.55 344.74L256.5 345.09L246.75 340.16L241.82 340.34L236.36 342.81L222.28 339.81L197.28 318.16L197.1 313.76L192.17 313.4L182.31 306.36L172.8 301.78L152.38 282.42L155.9 281.19L159.07 282.95L162.24 279.43L173.16 275.73L174.56 263.58L178.26 263.58L179.32 257.95L181.96 255.31L196.65 270.06Z" id="path-Mapo-gu" fill="url(#pat-Mapo-gu)"></path>
+				<path d="M529.36 350.17L524.01 369.31L561.77 389.99L562.29 379.82L565.56 379.99L572.98 367.06L573.67 358.62L587.98 338.96L605.05 337.75L610.74 335.17L614.01 337.75L617.12 337.41L616.08 327.24L614.01 324.31L614.88 309.31L611.25 303.1L610.91 295.51L606.25 286.03L605.05 277.93L608.15 273.27L594.19 277.41L574.36 293.1L564.88 297.41L555.05 294.99L540.91 301.37L531.6 312.75L519.19 343.44L529.36 350.17Z" id="path-Gangdong-gu" fill="url(#pat-Gangdong-gu)"></path>
+				<path d="M529.36 350.18L524.09 369.18L561.69 389.99L554.09 391.23L558.92 396.26L555.7 397.67L555.7 409.74L563.55 413.77L569.38 410.95L570.99 414.37L577.03 416.58L580.25 414.37L585.28 417.39L583.07 429.86L580.25 438.11L570.99 442.54L566.97 460.04L563.55 462.66L557.71 463.26L556.71 466.28L552.48 468.29L544.25 463.26L540.62 464.47L541.43 470.91L548.07 475.74L543.64 477.95L537.61 477.95L532.78 474.33L532.17 478.96L529.36 481.17L511.45 451.39L514.27 449.18L510.85 442.54L501.19 432.48L491.53 427.45L458.93 417.39L452.09 409.14L449.28 383.38L473.02 386.6L483.7 384.79L498.79 376.94L506.43 367.09L519.19 343.41L529.36 350.18Z" id="path-Songpa-gu" fill="url(#pat-Songpa-gu)"></path>
+				<path d="M452.2 408.99L459.09 417.56L491.45 427.41L501.56 432.63L510.82 442.48L514.38 449.28L511.72 451.35L529.35 481.17L521.37 488.69L521.1 494.9L519.92 494.9L515.39 492.53L516.08 490.36L503.56 488.3L501 493.32L493.51 494.9L491.45 492.24L491.15 488.3L488.69 485.34L484.15 480.02L479.62 478.05L477.15 473.91L474.19 470.07L475.08 464.95L463.55 464.45L461.97 467.9L458.22 468.79L456.54 465.83L452.9 465.24L451.81 467.51L442.06 469.18L441.25 475.49L430.31 477.36L426.96 474.21L423.51 473.32L425.88 471.65L416.72 461.2L411.43 446.9L400.99 448.19L381.58 395.77L378.13 381.49L373.8 374.88L389.17 358.73L395.47 357.25L428.45 367.89L449.28 383.65L452.2 408.99Z" id="path-Gangnam-gu" fill="url(#pat-Gangnam-gu)"></path>
+				<path d="M378.01 381.39L381.64 395.87L400.99 448.1L411.53 447.06L416.74 461.23L425.83 471.54L423.57 473.37L427.13 474.34L430.23 477.32L441.24 475.45L442.05 469.16L451.72 467.61L452.92 465.21L456.61 465.95L458.12 468.75L461.86 467.89L463.53 464.38L475.02 465.05L474.28 470.09L477.12 473.95L479.58 478.04L484.32 480.08L490.93 488.24L490.77 489.53L490.3 494.62L489.03 498.78L486.95 499.47L485.91 502.71L483.25 505.49L479.9 511.61L479.09 519.71L475.74 519.71L469.8 526.53L455.92 524.68L455.46 528.84L459.51 529.76L459.51 533.58L455.46 535.77L454.19 546.41L448.29 546.41L446.45 548.72L435.46 546.76L427.83 548.72L420.43 545.25L419.05 540.05L411.74 531.82L406.24 531.98L403.66 530.39L403.17 527.15L407.62 519.07L406.24 517.2L406.63 512.09L404.7 508.3L405.69 501.93L404.87 497.31L402.6 496.6L402.6 492.37L401.33 492.37L400.23 490.5L402.21 485.66L397.16 481.82L394.74 482.26L394.74 485.66L388.85 495.94L377.53 501.05L367.82 500.88L361.61 488.79L359.42 488.08L356.82 479.56L347.22 479.95L347.22 489.18L342.11 489.18L341.34 492.81L338.7 492.64L335.63 495.61L333.76 491.54L335.08 482.92L332.44 477.59L326.28 468.3L325.19 462.59L327.49 425.77L330.41 420.61L323.65 414.45L323.32 408.08L331.83 407.09L335.3 407.86L340.13 406.49L349.06 396.76L355.48 395.17L373.8 375.11L378.01 381.39Z" id="path-Seocho-gu" fill="url(#pat-Seocho-gu)"></path>
+				<path d="M327.63 425.41L331.05 420.29L323.78 414.3L323.32 408.32L314.81 407.25L272.97 386.1L266.77 388.88L254.16 391.44L245.62 391.44L236.43 419.43L237.07 423.06L224.46 426.7L212.71 446.78L218.91 446.78L226.81 443.15L232.56 438.88L243.24 437.38L247.94 429.47L264.82 435.46L276.36 431.18L284.69 435.46L289.82 435.46L292.81 431.18L295.8 431.18L295.8 437.38L295.8 448.7L306.06 461.92L308.41 461.92L309.26 464.09L325.5 461.92L327.63 425.41Z" id="path-Dongjak-gu" fill="url(#pat-Dongjak-gu)"></path>
+				<path d="M333.58 492.08L335.51 483.53L332.3 477.76L326.35 468.79L325.46 461.92L309.44 464.09L309.01 461.31L306.02 461.31L295.76 448.7L295.76 430.97L292.99 430.97L289.35 434.82L284.22 434.82L276.32 430.97L265.21 435.67L247.98 429.26L243.07 437.59L232.38 439.09L227.47 442.94L218.92 446.57L212.71 446.57L206.33 455.62L208.66 457.47L221.06 453.83L221.06 458.75L224.9 460.24L224.9 465.16L219.77 470.07L226.61 483.53L228.96 496.57L239.43 497.21L241.57 503.62L248.78 509.6L252.2 513.88L251.56 518.79L262.67 526.91L261.17 529.9L264.59 536.31L300.28 525.63L299.42 520.5L301.56 517.72L314.59 514.52L326.35 502.76L326.77 498.92L334.95 495.5L333.58 492.08Z" id="path-Gwanak-gu" fill="url(#pat-Gwanak-gu)"></path>
+				<path d="M208.73 457.49L220.82 453.56L220.82 458.51L224.89 460.4L224.89 465.06L219.51 469.71L226.78 482.79L228.97 496.35L239.45 497.08L241.49 503.63L249.05 510.33L239.01 520.22L236.97 526.48L234.21 528.81L227.51 528.37L222.42 537.25L219.51 540.6L211.5 539.29L211.5 536.31L206.1 531.29L206.55 527.06L204.8 519.35L200.87 518.48L199.71 515.27L201.6 513.24L198.69 505.96L192.29 505.09L192.29 500.86L187.77 498.83L186.46 492.86L192.29 489.95L188.79 484.42L192.87 481.8L188.21 468.99L194.91 464.62L188.21 453.85L199.71 459.09L204.95 457.89L206.45 455.57L208.73 457.49Z" id="path-Geumcheon-gu" fill="url(#pat-Geumcheon-gu)"></path>
+				<path d="M224.32 426.59L237 422.99L236.33 419.06L245.87 391.47L254.21 391.47L266.87 388.9L272.78 386.1L256.18 366.15L240.6 358.55L224.81 354.81L215.9 351.57L190.39 331.33L186.46 335.99L186.46 340.24L189.79 341.65L196.06 358.55L193.84 364.53L190.8 364.53L188.57 368.17L179.87 372.63L178.25 389.43L194.44 398.54L196.06 402.18L200.78 405.27L198.78 406.02L198.34 425.09L203.46 442.4L209.71 447.08L212.46 447.08L224.32 426.59Z" id="path-Youngdeungpo-gu" fill="url(#pat-Youngdeungpo-gu)"></path>
+				<path d="M194.36 398.05L195.88 402.17L200.67 405.04L198.66 405.99L198.66 425.61L203.35 442.36L209.66 447.08L212.44 446.76L205.55 457.48L199.33 458.91L188.81 453.84L194.36 464.65L187.95 468.58L192.83 481.78L188.81 484.27L179.24 470.97L170.65 453.56L169.89 447.91L174.57 442.93L172.66 440.35L169.12 440.64L170.65 435.85L166.44 436.23L163.86 434.51L163.28 428.77L160.79 428.77L159.93 432.31L156.3 435.85L152.66 436.62L147.3 444.94L143.06 445.99L138.69 452.88L134.68 453.27L132.19 451.64L129.51 453.84L128.55 467.62L125.78 465.71L121.97 465.71L120.32 464.08L117.36 465.23L114.39 464.65L111.9 461.98L108.55 460.35L105.01 463.32L98.6 461.98L94.96 463.32L91.61 458.24L91.61 445.71L97.45 442.93L95.44 437.96L84.44 432.02L81.57 426.47L82.62 423.7L87.5 423.7L91.04 421.59L91.61 419.1L95.44 415.18L95.44 407.91L96.59 405.04L105.39 403.32L108.08 404.37L107.22 407.91L114.02 413.65L118.42 415.18L121.29 413.36L121.97 408.77L129.05 404.37L133.65 403.12L140.06 400.64L143.47 403.12L147.3 401.78L149.79 407.24L153.9 405.8L155.24 410.88L162.71 411.35L163.86 409.25L167.21 409.82L178.25 389.44L194.36 398.05Z" id="path-Guro-gu" fill="url(#pat-Guro-gu)"></path>
+				<path d="M105.34 402.86L108.47 404.31L107.32 407.66L114.17 413.81L118.41 415.15L121.43 413.02L121.76 408.55L128.8 404.31L134.03 402.86L140.28 400.62L143.75 402.86L147.43 402.07L150 407.1L153.91 405.98L155.29 410.57L162.85 411.24L163.86 409.22L167.38 409.67L178.25 389.44L180.12 372.58L188.61 368.22L190.73 364.53L193.64 364.53L196.2 358.55L189.61 341.74L186.37 340.23L179.89 332.91L172.96 334.81L166.04 333.81L156.41 327.33L152.94 340.06L155.29 344.31L154.84 365.31L122.29 371.68L111.56 344.64L107.76 343.86L107.32 335.59L103.96 335.59L100.39 345.31L95.02 345.87L95.58 357.83L99.49 364.87L103.4 367.1L104.75 372.58L100.72 376.93L99.49 386.66L96.7 389.9L96.7 392.69L99.05 394.36L98.71 404.31L105.34 402.86Z" id="path-Yangcheon-gu" fill="url(#pat-Yangcheon-gu)"></path>
+				<path d="M186.59 336.05L186.1 339.84L179.95 332.75L172.85 334.73L165.99 333.63L156.54 327.53L152.96 340.11L155.27 344.29L154.78 365.22L122.46 371.64L111.74 344.73L107.88 343.6L107.37 335.45L103.98 335.45L100.45 345.29L95.02 345.87L82.77 345.87L76.42 341.87L66.54 341.87L62.46 352.22L55.24 352.93L55.24 345.16L44.18 335.28L34.3 335.28L28.18 330.58L23.48 331.33L12.42 319.28L23.48 312.69L29.36 306.1L27.48 298.81L37.83 291.28L37.83 286.58L45.83 279.05L53.12 279.05L64.58 258.58L62.46 250.34L59.17 242.34L64.58 232.22L82.23 253.87L129.05 283.55L190.46 331.33L186.59 336.05Z" id="path-Gangseo-gu" fill="url(#pat-Gangseo-gu)"></path>
+			</defs><g><g>
+				<use onclick="openNav(this)" class="gu" id ="Yongsan-gu" xlink:href="#path-Yongsan-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Seongdong-gu" xlink:href="#path-Seongdong-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)"class="gu" id = "Gwangjin-gu" xlink:href="#path-Gwangjin-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)"class="gu" id = "Jungrang-gu" xlink:href="#path-Jungrang-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)"class="gu" id = "Seongbuk-gu" xlink:href="#path-Seongbuk-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)"class="gu" id = "Dongdaemun-gu" xlink:href="#path-Dongdaemun-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Noweon-gu" xlink:href="#path-Noweon-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Dobong-gu" xlink:href="#path-Dobong-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Gangbuk-gu" xlink:href="#path-Gangbuk-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Jung-gu" xlink:href="#path-Jung-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Jongro-gu" xlink:href="#path-Jongro-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Seodaemun-gu" xlink:href="#path-Seodaemun-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Eunpyeong-gu" xlink:href="#path-Eunpyeong-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Mapo-gu" xlink:href="#path-Mapo-gu" opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Gangdong-gu" xlink:href="#path-Gangdong-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Songpa-gu" xlink:href="#path-Songpa-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Gangnam-gu" xlink:href="#path-Gangnam-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Seocho-gu" xlink:href="#path-Seocho-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Dongjak-gu" xlink:href="#path-Dongjak-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Gwanak-gu" xlink:href="#path-Gwanak-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Geumcheon-gu" xlink:href="#path-Geumcheon-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Youngdeungpo-gu" xlink:href="#path-Youngdeungpo-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Guro-gu" xlink:href="#path-Guro-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Yangcheon-gu" xlink:href="#path-Yangcheon-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g><g>
+				<use onclick="openNav(this)" class="gu" id = "Gangseo-gu" xlink:href="#path-Gangseo-gu" opacity="1"  stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g></g>
+	 		<defs>
+			 	<pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
+			    <image xlink:href="sagin2.png" x="0" y="0" width="100" height="100" />
+				</pattern>
+			</defs>
+		</svg>
+		<script>
+		var panZoomTiger = svgPanZoom('#Map');
+		
+		</script>
+	</div>
+	<nav style="left:-300px;" id="nav" >
+		<div id="nav-div" style="overflow:scroll; width:300px; height:624px;">
+			<ul id="imglist">
+				<li>
+					<img name="DSC_05731.jpg" class="images" src="DSC_05731.jpg" width="276px" onmouseover="imgOver(this)" onmouseout="imgOut(this)" onclick="imgClick(this)">
+				</li>
+				<li>
+					<img name="DSC_06001.jpg" class="images" src="sagin2.png" width="276px" onmouseover="imgOver(this)" onmouseout="imgOut(this)" onclick="imgClick(this)">
+				</li>
+				<li>
+					<img name="DSC_06081.jpg" class="images" src="DSC_06081.jpg" width="276px" onmouseover="imgOver(this)" onmouseout="imgOut(this)" onclick="imgClick(this)">
+				</li>
+				<li>
+					<img name="DSC_07121.jpg" class="images" src="DSC_07121.jpg" width="276px" onmouseover="imgOver(this)" onmouseout="imgOut(this)" onclick="imgClick(this)">
+				</li>
+			</ul>
+		</div>
+	</nav>
+</body>
+</html>

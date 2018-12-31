@@ -1,0 +1,146 @@
+body{
+	height:100%;
+}
+.div_all{
+	min-width:1080px;
+	min-height:100%;
+	position:relative;
+	overflow:hidden;
+}
+.div_Topmenu{
+	border-bottom:1px solid #eaeae1;
+	height:76px;
+}
+
+.div_Topmenu_container{
+	position:relative;
+	max-width:1000px;
+	height:76px;
+	margin:0 auto;
+	padding-top:18px;
+	padding-bottom:10px;
+}
+.logo{
+	width:200px;
+}
+.ul_menu{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.menu{
+	width:40px; 
+	height:40px;
+}
+ 
+.logo{
+	display:inline-block;
+	padding-right:20px;
+	padding-left:10px;
+}
+.search{
+	display:inline-block;
+	width:600px;
+}
+.search input{
+	width:100%;
+	padding:4px 42px 4px 14px;
+	height:35px;
+	box-sizing:border-box;
+	border-radius:4px;
+	background-color: #e7e7e7;
+	border:none;
+}
+.search button{
+	background:none;
+	position: absolute;
+	top:26px;
+	right:200px;
+	border:none;
+}
+.swap,.login{
+	display:inline-block;
+	margin-left:10px;
+}
+.swap button, .login button{
+	background:none;
+	border:none;
+}
+.div_Search{
+	display:inline-block;
+	width:300px;
+}	
+
+.div_Menu{
+	display:inline-block;
+	margin-left:50px;
+	margin-right:150px;
+	min-width:150px;
+	width:150px;
+
+}
+
+#svg_div{
+	width:100%;
+	
+}
+
+
+use{
+	fill:#FFFFFF;
+}
+
+
+nav {
+	width:300px;
+	height:624px;
+	margin:0px 0px 0px 0px;
+	position:absolute;
+	z-index:999;
+	top:76px;
+	left:-300px;
+	background: #e7e7e7;
+	color: #9aa3a8;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	transition: all 0.15s ease-in-out;
+	padding:0px 0px 0px 0px;
+}
+nav ul{
+	-webkit-padding-start: 0px;
+}
+nav li{
+	list-style:none;
+	margin-bottom:10px;
+	padding:2px 2px 2px 2px;
+}
+nav img{
+	padding:2px 2px 2px 2px;
+}
+nav img:hover{
+	padding:0px 0px 0px 0px;
+	border:2px solid black;
+}
+nav div{
+	margin:0px 0px 0px 0px;
+	padding:10px 10px 10px 10px;
+}
+
+nav div::-webkit-scrollbar-track
+{
+	display:none;
+}
+
+nav div::-webkit-scrollbar
+{
+	width: 5px;
+}
+
+nav div::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+
+
